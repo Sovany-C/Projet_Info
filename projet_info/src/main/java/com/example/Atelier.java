@@ -4,10 +4,30 @@
  */
 package com.example;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author arthu
  */
 public class Atelier {
+    private String nom;
+   
+  
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+   
+
+    public Atelier(String nom, ArrayList<Operateur> operateurs, ArrayList<Equipement> equipements) {
+        this.nom = nom;
+
+    }
+    
     
 }
