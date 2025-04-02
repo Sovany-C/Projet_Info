@@ -24,7 +24,7 @@ public class Atelier {
 
    
 
-    public Atelier(String nom, ArrayList<Operateur> operateurs, ArrayList<Equipement> equipements) {
+    public Atelier(String nom) {
         this.nom = nom;
 
     }
