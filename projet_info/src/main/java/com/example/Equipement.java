@@ -22,8 +22,5 @@ public class Equipement {
         this.dEquipement = dEquipement;
     }
 
-    public void modifier(){}
-    public void affiche(){}
-    public void supprimer(){}
 
 }
