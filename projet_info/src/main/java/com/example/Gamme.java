@@ -56,11 +56,12 @@ public class Gamme {
         return liste;
     }
 
-    public float coutGamme(){
-        float coutTotal = 0;
+    public float dureeGamme(){
+        float dureeTotal = 0;
         for(Operation o : this.operations){
-            if()
+            dureeTotal = dureeTotal + o.getDureeOperation;
         }
+        return dureeTotal;
     }
 
 

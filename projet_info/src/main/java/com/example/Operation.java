@@ -15,6 +15,7 @@ public class Operation {
     private String refEquipement;
     private float dureeOperation;
 
+    // Getters & Setters
     public String getRefOperation() {
         return refOperation;
     }
@@ -47,6 +48,7 @@ public class Operation {
         this.dureeOperation = dureeOperation;
     }
 
+    // Constructeur
     public Operation(String refOperation, String dOperation, String refEquipement, float dureeOperation) {
         this.refOperation = refOperation;
         this.dOperation = dOperation;
