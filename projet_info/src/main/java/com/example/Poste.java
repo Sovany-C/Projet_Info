@@ -17,6 +17,7 @@ public class Poste extends Equipement {
     private String dPoste;
     private Set<Machine> machines;
 
+    // Getters & Setters
     public String getRefPoste() {
         return refPoste;
     }
@@ -41,6 +42,7 @@ public class Poste extends Equipement {
         this.machines = machines;
     }
 
+    // Constructeur
     public Poste(String refPoste, String dPoste, Set<Machine> machines, String refEquipement, String dEquipement) {
         super(refEquipement, dEquipement);
         this.refPoste = refPoste;
@@ -48,9 +50,11 @@ public class Poste extends Equipement {
         this.machines = machines;
     }
 
+    // Méthodes
     public String affichePoste(){
         return this.refPoste+"|"+this.dPoste+"|"+this.machines ;
     }
+
     public void modifierPoste(Machine m){
         System.out.println("Tapez 1 pour ajouger une machine, tapez 2 pour retirer une machine");
         Scanner sc = new Scanner(System.in);
@@ -61,6 +65,14 @@ public class Poste extends Equipement {
         if(nombre == 2){
             this.machines.remove(m);
         }
-    } 
+    }
+
+    public float coutPoste(){
+        float cout = 0;
+        for(Machine m : machines){
+            cout = cout + m.getCout;
+        }
+        return cout
+    }
 
 }
