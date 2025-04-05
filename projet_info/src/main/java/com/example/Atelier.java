@@ -12,7 +12,7 @@ package com.example;
  */
 public class Atelier {
     private String nom;
-   
+    
   
     public String getNom() {
         return nom;

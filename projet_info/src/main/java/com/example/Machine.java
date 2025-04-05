@@ -60,12 +60,12 @@ public class Machine extends Equipement{
     }
 
     // Methodes
-    public String affiche(){
+    public String afficheMachine(){
         return "Reférence machine : " + this.refMachine + " | désignation : " + this.dMachine + " | type : " + this.type + " | coordonnées"
         + this.x + "," + this.y + " | cout horaire : " + this.cout;
     }
 
-    public void modifier(){
+    public void modifierMachine(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Taper 1 pour modifier la reférence, 2 pour la désignation, 3 pour le type, 4 pour les coordonnées, 5 pour le cout, O pour sortir");
         int choix = sc.nextInt();
@@ -102,7 +102,7 @@ public class Machine extends Equipement{
         }
         return;
     }
-    public void supprimer(){
+    public void supprimerMachine(){
 
     }
     

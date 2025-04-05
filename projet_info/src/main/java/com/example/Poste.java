@@ -47,21 +47,20 @@ public class Poste extends Equipement {
         this.dPoste = dPoste;
         this.machines = machines;
     }
-public String affichePoste(){
-    return this.refPoste+"|"+this.dPoste+"|"+this.machines ;
-    
-   
-}
-public void modifierPoste(Machine m){
-    System.out.println("Tapez 1 pour ajouger une machine, tapez 2 pour retirer une machine");
-    Scanner sc = new Scanner(System.in);
-    int nombre = sc.nextInt();
-    if(nombre == 1){
-      this.machines.add(m);
+
+    public String affichePoste(){
+        return this.refPoste+"|"+this.dPoste+"|"+this.machines ;
     }
-    if(nombre == 2){
-    this.machines.remove(m);
-}
-} 
+    public void modifierPoste(Machine m){
+        System.out.println("Tapez 1 pour ajouger une machine, tapez 2 pour retirer une machine");
+        Scanner sc = new Scanner(System.in);
+        int nombre = sc.nextInt();
+        if(nombre == 1){
+            this.machines.add(m);
+        }
+        if(nombre == 2){
+            this.machines.remove(m);
+        }
+    } 
 
 }

@@ -10,8 +10,9 @@ package com.example;
  */
 public class Produit {
     private String codeProduit;
-   private String dProduit;
+    private String dProduit;
 
+    // Getters & Setters
     public String getCodeProduit() {
         return codeProduit;
     }
@@ -28,13 +29,36 @@ public class Produit {
         this.dProduit = dProduit;
     }
 
+    // Constructeur
     public Produit(String codeProduit, String dProduit) {
         this.codeProduit = codeProduit;
         this.dProduit = dProduit;
     }
-    public void afficheProduit(){
-        System.out.println(dProduit);
-        
+
+    // Méthodes
+    public String afficheProduit(){
+        return "Code produit: " + this.codeProduit + " | Désignation: " + this.dProduit;
+    }
+
+    public void modifierProduit(){
+        System.out.println("Tapez 1 pour modifier le code produit, tapez 2 pour modifier la désignation");
+        Scanner sc = new Scanner(System.in);
+        int nombre = sc.nextInt();
+        String modif;
+        if(nombre == 1){
+            System.out.println("Tapez votre modification");
+            modif = sc.nextLine()
+            this.setCodeProduit(modif);
+        }
+        if(nombre == 2){
+            System.out.println("Tapez votre modification");
+            modif = sc.nextLine()
+            this.setdProduit(modif);
+        }
+    }
+
+    public void supprimerProduit(){
+        this = null;
     }
     
 }
