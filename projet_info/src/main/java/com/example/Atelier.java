@@ -12,8 +12,9 @@ package com.example;
  */
 public class Atelier {
     private String nom;
-    
+    private ArrayList<Equipement> equipements;
   
+    // Getters & Setters
     public String getNom() {
         return nom;
     }
@@ -22,11 +23,17 @@ public class Atelier {
         this.nom = nom;
     }
 
+    public ArrayList<Equipement> getEquipements(){
+        return equipements;
+    }
    
+    public void setEquipements(ArrayList<Equipement> equipements){
+        this.equipements = equipements;
+    }
 
     public Atelier(String nom) {
         this.nom = nom;
-
+        this.equipements = ;
     }
     
     
