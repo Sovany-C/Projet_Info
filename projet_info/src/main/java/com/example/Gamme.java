@@ -12,14 +12,15 @@ import java.util.ArrayList;
  */
 public class Gamme {
     private String refGamme;
-    private ArrayList<Operation> opérations;
+    private ArrayList<Operation> operations;
     private ArrayList<Equipement> equipements;
 
+    // Getters & Setters
     public String getRefGamme() {
         return refGamme;
     }
 
-    public ArrayList<Operation> getOpérations() {
+    public ArrayList<Operation> getOperations() {
         return opérations;
     }
 
@@ -31,7 +32,7 @@ public class Gamme {
         this.refGamme = refGamme;
     }
 
-    public void setOpérations(ArrayList<Operation> opérations) {
+    public void setOperations(ArrayList<Operation> opérations) {
         this.opérations = opérations;
     }
 
@@ -39,10 +40,28 @@ public class Gamme {
         this.equipements = equipements;
     }
 
-    public Gamme(String refGamme, ArrayList<Operation> opérations, ArrayList<Equipement> equipements) {
+    // Constructeur
+    public Gamme(String refGamme, ArrayList<Operation> operations, ArrayList<Equipement> equipements) {
         this.refGamme = refGamme;
-        this.opérations = opérations;
+        this.operations = operations;
         this.equipements = equipements;
     }
-    
+
+    // Méthodes
+    public String afficherGamme(){
+        String liste = "";
+        for(Equipement e : this.equipements ){
+            liste = liste + e.getRefEquipement;
+        }
+        return liste;
+    }
+
+    public float coutGamme(){
+        float coutTotal = 0;
+        for(Operation o : this.operations){
+            if()
+        }
+    }
+
+
 }

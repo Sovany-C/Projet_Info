@@ -102,8 +102,6 @@ public class Machine extends Equipement{
         }
         return;
     }
-    public void supprimerMachine(){
-
-    }
+    
     
 }

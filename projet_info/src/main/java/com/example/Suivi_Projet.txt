@@ -1,0 +1,7 @@
+Méthodes à implémenter
+    - Machine, Produit, Poste : supprimer()
+    - Gamme : modifierGamme(), supprimerGamme()
+
+
+Hors consigne
+    - 
