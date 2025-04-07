@@ -4,7 +4,6 @@
  */
 package com.example;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -65,12 +64,13 @@ public class Poste extends Equipement {
         if(nombre == 2){
             this.machines.remove(m);
         }
+        sc.close();
     }
 
     public float cout(){
         float cout = 0;
-        for(Machine m : machines){
-            cout = cout + m.getCout;
+        for(Machine m : this.machines){
+            cout += m.cout();
         }
         return cout;
     }

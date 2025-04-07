@@ -21,7 +21,7 @@ public class Gamme {
     }
 
     public ArrayList<Operation> getOperations() {
-        return opérations;
+        return operations;
     }
 
     public ArrayList<Equipement> getEquipements() {
@@ -33,7 +33,7 @@ public class Gamme {
     }
 
     public void setOperations(ArrayList<Operation> opérations) {
-        this.opérations = opérations;
+        this.operations = opérations;
     }
 
     public void setEquipements(ArrayList<Equipement> equipements) {
@@ -51,7 +51,7 @@ public class Gamme {
     public String afficherGamme(){
         String liste = "";
         for(Equipement e : this.equipements ){
-            liste = liste + e.getRefEquipement;
+            liste = liste + e.getRefEquipement();
         }
         return liste;
     }
@@ -59,7 +59,7 @@ public class Gamme {
     public float dureeGamme(){
         float dureeTotal = 0;
         for(Operation o : this.operations){
-            dureeTotal = dureeTotal + o.getDureeOperation;
+            dureeTotal = dureeTotal + o.getDureeOperation();
         }
         return dureeTotal;
     }
@@ -68,8 +68,8 @@ public class Gamme {
         float coutTotal = 0;
         for(Operation o : this.operations){
             for(Equipement e : this.equipements){
-                if(e.getRefEquipement.equals(o.getRefEquipement)){
-                    coutTotal += o.getDureeOperation * e.cout();
+                if(e.getRefEquipement().equals(o.getRefEquipement())){
+                    coutTotal += o.getDureeOperation() * e.cout();
                 }
             }
         }

@@ -69,6 +69,7 @@ public class Machine extends Equipement{
         Scanner sc = new Scanner(System.in);
         System.out.println("Taper 1 pour modifier la reférence, 2 pour la désignation, 3 pour le type, 4 pour les coordonnées, 5 pour le cout, O pour sortir");
         int choix = sc.nextInt();
+        sc.close();
         switch (choix) {
             case 1:
                 System.out.println("Nouvelle ref");

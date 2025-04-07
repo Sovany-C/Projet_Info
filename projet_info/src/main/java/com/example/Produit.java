@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.example;
+import java.util.Scanner;
 
 /**
  *
@@ -47,18 +48,16 @@ public class Produit {
         String modif;
         if(nombre == 1){
             System.out.println("Tapez votre modification");
-            modif = sc.nextLine()
+            modif = sc.nextLine();
             this.setCodeProduit(modif);
         }
         if(nombre == 2){
             System.out.println("Tapez votre modification");
-            modif = sc.nextLine()
+            modif = sc.nextLine();
             this.setdProduit(modif);
         }
     }
 
-    public void supprimerProduit(){
-        this = null;
-    }
+
     
 }

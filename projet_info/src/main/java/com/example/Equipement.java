@@ -4,6 +4,7 @@ public class Equipement {
     private String refEquipement;
     private String dEquipement;
 
+    
     public String getRefEquipement() {
         return refEquipement;
     }

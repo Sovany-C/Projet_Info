@@ -4,6 +4,7 @@
  */
 package com.example;
 
+import java.util.ArrayList;
 
 
 /**
@@ -13,7 +14,7 @@ package com.example;
 public class Atelier {
     private String nom;
     private ArrayList<Equipement> equipements;
-  
+
     // Getters & Setters
     public String getNom() {
         return nom;
@@ -33,7 +34,6 @@ public class Atelier {
 
     public Atelier(String nom) {
         this.nom = nom;
-        this.equipements = ;
     }
     
     
