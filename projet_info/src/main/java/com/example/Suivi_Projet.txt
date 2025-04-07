@@ -6,5 +6,4 @@ Méthodes à implémenter
 Hors consigne
     - Création d'une méthode coutPoste() pour calculer le cout horaire du poste = l'ensemble des machines du poste
 
-# Dans Poste : peut-être remplacer "String refEquipement" par "Equipement refEquipement" qui permettrait d'utiliser de 
-connaitre précisement l'équipement utilisé
+

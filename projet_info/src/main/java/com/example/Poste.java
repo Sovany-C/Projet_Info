@@ -67,12 +67,12 @@ public class Poste extends Equipement {
         }
     }
 
-    public float coutPoste(){
+    public float cout(){
         float cout = 0;
         for(Machine m : machines){
             cout = cout + m.getCout;
         }
-        return cout
+        return cout;
     }
 
 }

@@ -64,5 +64,16 @@ public class Gamme {
         return dureeTotal;
     }
 
+    public float coutGamme(){
+        float coutTotal = 0;
+        for(Operation o : this.operations){
+            for(Equipement e : this.equipements){
+                if(e.getRefEquipement.equals(o.getRefEquipement)){
+                    coutTotal += o.getDureeOperation * e.cout();
+                }
+            }
+        }
+        return coutTotal;
+    }
 
 }

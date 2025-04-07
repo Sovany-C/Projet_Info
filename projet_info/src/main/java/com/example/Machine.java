@@ -102,6 +102,10 @@ public class Machine extends Equipement{
         }
         return;
     }
+
+    public float cout(){
+        return this.getCout();
+    }
     
     
 }
