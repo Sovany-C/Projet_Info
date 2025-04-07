@@ -56,6 +56,7 @@ public class Produit {
             modif = sc.nextLine();
             this.setdProduit(modif);
         }
+        sc.close();
     }
 
 
