@@ -4,6 +4,7 @@
  */
 package com.example;
 
+import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -42,30 +43,45 @@ public class Poste extends Equipement {
     }
 
     // Constructeur
-    public Poste(String refPoste, String dPoste, Set<Machine> machines, String refEquipement, String dEquipement) {
+    public Poste( String refEquipement, String dEquipement,String refPoste, String dPoste, Set<Machine> machines) {
         super(refEquipement, dEquipement);
         this.refPoste = refPoste;
         this.dPoste = dPoste;
         this.machines = machines;
     }
+    public Poste( String refEquipement, String dEquipement,String refPoste, String dPoste) {
+        super(refEquipement, dEquipement);
+        this.refPoste = refPoste;
+        this.dPoste = dPoste;
+        this.machines = new HashSet<>() ;
+    }
 
     // Méthodes
-    public String affichePoste(){
+    public String affiche(){
         return this.refPoste+"|"+this.dPoste+"|"+this.machines ;
     }
 
-    public void modifierPoste(Machine m){
-        System.out.println("Tapez 1 pour ajouger une machine, tapez 2 pour retirer une machine");
-        Scanner sc = new Scanner(System.in);
-        int nombre = sc.nextInt();
-        if(nombre == 1){
-            this.machines.add(m);
-        }
-        if(nombre == 2){
-            this.machines.remove(m);
-        }
-        sc.close();
+    // public void modifierPoste(Machine m){
+    //     System.out.println("Tapez 1 pour ajouger une machine, tapez 2 pour retirer une machine");
+    //     Scanner sc = new Scanner(System.in);
+    //     int nombre = sc.nextInt();
+    //     if(nombre == 1){
+    //         this.machines.add(m);
+    //     }
+    //     if(nombre == 2){
+    //         this.machines.remove(m);
+    //     }
+    //     sc.close();
+    // }
+
+    public void supprMachine(Machine m){
+        this.machines.add(m);
     }
+    public void addMachine(Machine m){
+        this.machines.remove(m);
+    }
+
+    
 
     public float cout(){
         float cout = 0;

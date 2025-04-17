@@ -1,9 +1,23 @@
 Méthodes à implémenter
     - Machine, Produit, Poste : supprimer()
-    - Gamme : modifierGamme(), supprimerGamme(), coutGamme()
+    - Gamme : modifierGamme(), supprimerGamme()
 
 
 Hors consigne
     - Création d'une méthode coutPoste() pour calculer le cout horaire du poste = l'ensemble des machines du poste
 
 
+
+Exemple organisation Atelier
+Atelier 
+    - Machine 01
+    - Machine 02
+    - Machine 03
+    - Machine 04
+    - Poste 01
+        - Machine 01
+        - Machine 04
+    - Poste 02
+        - Machine 01
+        - Machine 02
+        - Machine 03

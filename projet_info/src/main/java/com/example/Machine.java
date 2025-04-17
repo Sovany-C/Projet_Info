@@ -60,9 +60,9 @@ public class Machine extends Equipement{
     }
 
     // Methodes
-    public String afficheMachine(){
-        return "Reférence machine : " + this.refMachine + " | désignation : " + this.dMachine + " | type : " + this.type + " | coordonnées"
-        + this.x + "," + this.y + " | cout horaire : " + this.cout;
+    public String affiche(){
+        return "Reférence machine : " + this.refMachine + " | désignation : " + this.dMachine + " | type : " + this.type + " | coordonnées : "
+        + this.x + " , " + this.y + " | cout horaire : " + this.cout;
     }
 
     public void modifierMachine(){

@@ -34,6 +34,7 @@ public class Atelier {
 
     public Atelier(String nom) {
         this.nom = nom;
+        this.equipements = new ArrayList<Equipement>();
     }
     
     
