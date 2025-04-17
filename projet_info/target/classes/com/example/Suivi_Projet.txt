@@ -28,4 +28,4 @@ Constructeur Atelier, Equipement (Machine, Poste)
 Méthodes 
     Atelier : addEq
     Machine : affiche
-    Poste : addMachine, affiche
+    Poste : addMachine, supprMachine, affiche
