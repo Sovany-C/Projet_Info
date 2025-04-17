@@ -58,7 +58,13 @@ public class Poste extends Equipement {
 
     // Méthodes
     public String affiche(){
-        return this.refPoste+"|"+this.dPoste+"|"+this.machines ;
+        String affiche;
+        affiche = "Ref Poste : " + this.refPoste+" | Def : "+this.dPoste+" | [";
+        for(Machine m : this.machines){
+            affiche = affiche + m.getRefMachine() + " ,";
+        }
+        affiche = affiche + "]";
+        return affiche ;
     }
 
     // public void modifierPoste(Machine m){
@@ -74,10 +80,10 @@ public class Poste extends Equipement {
     //     sc.close();
     // }
 
-    public void supprMachine(Machine m){
+    public void addMachine(Machine m){
         this.machines.add(m);
     }
-    public void addMachine(Machine m){
+    public void supprMachine(Machine m){
         this.machines.remove(m);
     }
 
