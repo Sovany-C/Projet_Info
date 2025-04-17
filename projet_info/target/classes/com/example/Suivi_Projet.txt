@@ -21,3 +21,11 @@ Atelier
         - Machine 01
         - Machine 02
         - Machine 03
+
+Test validé :
+Constructeur Atelier, Equipement (Machine, Poste)
+
+Méthodes 
+    Atelier : addEq
+    Machine : affiche
+    Poste : addMachine, affiche

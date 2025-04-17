@@ -13,6 +13,13 @@ public class Main {
         Poste P01 = new Poste("EP05", "def", "P01", null);
         Poste P02 = new Poste("EP06", "def", "P02", null);
 
+        atelier.addEq(M01);
+        atelier.addEq(M02);
+        atelier.addEq(M03);
+        atelier.addEq(M04);
+        atelier.addEq(P01);
+        atelier.addEq(P02);
+
         P01.addMachine(M04);
         P01.addMachine(M01);
 
@@ -21,6 +28,9 @@ public class Main {
         P02.addMachine(M03);
 
         System.out.println(M01.affiche());
+        System.out.println(P01.affiche());
+
+        P01.supprMachine(M04);
         System.out.println(P01.affiche());
 
     }

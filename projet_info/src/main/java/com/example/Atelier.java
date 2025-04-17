@@ -32,10 +32,16 @@ public class Atelier {
         this.equipements = equipements;
     }
 
+    // Constructeur
     public Atelier(String nom) {
         this.nom = nom;
         this.equipements = new ArrayList<Equipement>();
     }
     
+    // Méthode
+    public void addEq(Equipement e){
+        this.equipements.add(e);
+    }
+
     
 }

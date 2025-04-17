@@ -58,13 +58,11 @@ public class Poste extends Equipement {
 
     // Méthodes
     public String affiche(){
-        String affiche;
-        affiche = "Ref Poste : " + this.refPoste+" | Def : "+this.dPoste+" | [";
+        Set<String> refMach = new HashSet<>();
         for(Machine m : this.machines){
-            affiche = affiche + m.getRefMachine() + " ,";
+            refMach.add(m.getRefMachine());
         }
-        affiche = affiche + "]";
-        return affiche ;
+        return "Ref Poste : " + this.refPoste+" | Def : "+this.dPoste+" | " + refMach;
     }
 
     // public void modifierPoste(Machine m){
