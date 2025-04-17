@@ -43,5 +43,13 @@ public class Atelier {
         this.equipements.add(e);
     }
 
+    public String affiche(){
+        ArrayList<String> refEq = new ArrayList<>();
+        for(Equipement e: this.equipements){
+            refEq.add(e.getRefEquipement());
+        }
+        return "Nom : " + this.nom + " | Equipement: " + refEq;
+    }
+
     
 }

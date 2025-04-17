@@ -56,7 +56,7 @@ public class Gamme {
         return liste;
     }
 
-    public float dureeGamme(){
+    public float dureeGamme(){ // Calcul durée total de la gamme
         float dureeTotal = 0;
         for(Operation o : this.operations){
             dureeTotal = dureeTotal + o.getDureeOperation();
@@ -64,7 +64,7 @@ public class Gamme {
         return dureeTotal;
     }
 
-    public float coutGamme(){
+    public float coutGamme(){ // Calcul cout total de cette gamme
         float coutTotal = 0;
         for(Operation o : this.operations){
             for(Equipement e : this.equipements){

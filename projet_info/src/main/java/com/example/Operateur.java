@@ -18,6 +18,7 @@ public class Operateur {
     private ArrayList<Machine> competences;
     private String statut;
 
+    // Getters and Setters
     public String getCode() {
         return code;
     }
@@ -58,6 +59,7 @@ public class Operateur {
         this.statut = statut;
     }
 
+    // Constructeur
     public Operateur(String code, String nom, String prenom, ArrayList<Machine> competences, String statut) {
         this.code = code;
         this.nom = nom;

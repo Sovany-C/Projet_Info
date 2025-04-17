@@ -33,6 +33,8 @@ public class Main {
         P01.supprMachine(M04);
         System.out.println(P01.affiche());
 
+        System.out.println(atelier.affiche());
+
     }
 
     

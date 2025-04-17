@@ -5,7 +5,6 @@
 package com.example;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 /**
@@ -78,16 +77,15 @@ public class Poste extends Equipement {
     //     sc.close();
     // }
 
-    public void addMachine(Machine m){
+    public void addMachine(Machine m){ // Ajoute machine au poste
         this.machines.add(m);
     }
-    public void supprMachine(Machine m){
+    public void supprMachine(Machine m){ // Supprime machine du poste
         this.machines.remove(m);
     }
 
     
-
-    public float cout(){
+    public float cout(){ // cout horaire du poste
         float cout = 0;
         for(Machine m : this.machines){
             cout += m.cout();
