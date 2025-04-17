@@ -26,6 +26,6 @@ Test validé :
 Constructeur Atelier, Equipement (Machine, Poste)
 
 Méthodes 
-    Atelier : addEq
+    Atelier : addEq, affiche
     Machine : affiche
     Poste : addMachine, supprMachine, affiche

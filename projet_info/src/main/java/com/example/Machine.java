@@ -65,44 +65,75 @@ public class Machine extends Equipement{
         + this.x + " , " + this.y + " | cout horaire : " + this.cout;
     }
 
-    public void modifierMachine(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Taper 1 pour modifier la reférence, 2 pour la désignation, 3 pour le type, 4 pour les coordonnées, 5 pour le cout, O pour sortir");
-        int choix = sc.nextInt();
-        sc.close();
-        switch (choix) {
-            case 1:
-                System.out.println("Nouvelle ref");
-                String ref = sc.nextLine();
-                this.setRefMachine(ref);
+    public void modifierMachine(String attribut, String mod){
+        switch (attribut) {
+            case "ref":
+                this.setRefMachine(mod);
                 break;
-            case 2 :
-                System.out.println("Nouvelle désignation");
-                String def = sc.nextLine();
-                this.setdMachine(def);
+            case "des":
+                this.setdMachine(mod);
                 break;
-            case 3 :
-                System.out.println("Type");
-                String type = sc.nextLine();
-                this.setType(type);
-                break;
-            case 4 :
-                System.out.println("Coordonnées");
-                float x = sc.nextFloat();
-                float y = sc.nextFloat();
-                this.setX(x);
-                this.setY(y);
-                break;
-            case 5 :
-                System.out.println("cout");
-                float cout = sc.nextFloat();
-                this.setCout(cout);
-                break;
+            case "type":
+                this.setType(mod);
             default:
-                return;
+                System.out.println("Erreur syntaxe : tapez ref, des ou type");
+                break;
         }
-        return;
     }
+    public void modifierMachine(String attribut, float mod){
+        switch (attribut) {
+            case "x":
+                this.setX(mod);
+                break;
+            case "y":
+                this.setY(mod);
+                break;
+            case "cout":
+                this.setCout(mod);
+            default:
+                System.out.println("Erreur syntaxe : tapez x, y ou cout");
+                break;
+        }
+    }
+
+    // public void modifierMachine(){
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("Taper 1 pour modifier la reférence, 2 pour la désignation, 3 pour le type, 4 pour les coordonnées, 5 pour le cout, O pour sortir");
+    //     int choix = sc.nextInt();
+    //     sc.close();
+    //     switch (choix) {
+    //         case 1:
+    //             System.out.println("Nouvelle ref");
+    //             String ref = sc.nextLine();
+    //             this.setRefMachine(ref);
+    //             break;
+    //         case 2 :
+    //             System.out.println("Nouvelle désignation");
+    //             String def = sc.nextLine();
+    //             this.setdMachine(def);
+    //             break;
+    //         case 3 :
+    //             System.out.println("Type");
+    //             String type = sc.nextLine();
+    //             this.setType(type);
+    //             break;
+    //         case 4 :
+    //             System.out.println("Coordonnées");
+    //             float x = sc.nextFloat();
+    //             float y = sc.nextFloat();
+    //             this.setX(x);
+    //             this.setY(y);
+    //             break;
+    //         case 5 :
+    //             System.out.println("cout");
+    //             float cout = sc.nextFloat();
+    //             this.setCout(cout);
+    //             break;
+    //         default:
+    //             return;
+    //     }
+    //     return;
+    // }
 
     public float cout(){
         return this.getCout();
