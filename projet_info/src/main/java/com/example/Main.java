@@ -21,7 +21,6 @@ public class Main {
             }
         }
         System.out.println(atelier.affiche());
-
     }
 
     public static void creationMachine(Atelier atelier, String refEquipement, String dEquipement, String refMachine, String dMachine, String type, float x,
@@ -35,7 +34,7 @@ public class Main {
         String[] mots;
 
         try{
-            BufferedReader flux=new BufferedReader(new FileReader("Machines.txt"));
+            BufferedReader flux=new BufferedReader(new FileReader("C:\\Users\\camil\\Documents\\Informatique\\Projet_S2\\Projet_Info\\projet_info\\src\\main\\java\\com\\example\\Machines.txt"));
             String lignelue;
             while((lignelue=flux.readLine())!=null){
     
