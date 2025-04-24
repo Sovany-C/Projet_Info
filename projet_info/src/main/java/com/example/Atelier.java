@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Atelier {
     private String nom;
     private ArrayList<Equipement> equipements;
+    private ArrayList<Produit> produits;
 
     // Getters & Setters
     public String getNom() {
@@ -32,10 +33,19 @@ public class Atelier {
         this.equipements = equipements;
     }
 
+    public ArrayList<Produit> getProduits() {
+        return produits;
+    }
+
+    public void setProduits(ArrayList<Produit> produits) {
+        this.produits = produits;
+    }
+
     // Constructeur
     public Atelier(String nom) {
         this.nom = nom;
         this.equipements = new ArrayList<Equipement>();
+        this.produits = new ArrayList<Produit>();
     }
     
     // Méthode
@@ -50,6 +60,8 @@ public class Atelier {
         }
         return "Nom : " + this.nom + " | Equipement: " + refEq;
     }
+
+    
 
     
 }

@@ -4,6 +4,7 @@
  */
 package com.example;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  *
@@ -12,6 +13,7 @@ import java.util.Scanner;
 public class Produit {
     private String codeProduit;
     private String dProduit;
+    private ArrayList<Gamme> gammes;
 
     // Getters & Setters
     public String getCodeProduit() {
@@ -30,10 +32,19 @@ public class Produit {
         this.dProduit = dProduit;
     }
 
+    public ArrayList<Gamme> getGammes() {
+        return gammes;
+    }
+
+    public void setGammes(ArrayList<Gamme> gammes) {
+        this.gammes = gammes;
+    }
+
     // Constructeur
     public Produit(String codeProduit, String dProduit) {
         this.codeProduit = codeProduit;
         this.dProduit = dProduit;
+        this.gammes = new ArrayList<Gamme>();
     }
 
     // Méthodes
@@ -59,6 +70,7 @@ public class Produit {
         sc.close();
     }
 
+    
 
     
 }

@@ -1,5 +1,4 @@
 package com.example;
-import java.util.Scanner;
 
 public class Machine extends Equipement{
     private String refMachine;

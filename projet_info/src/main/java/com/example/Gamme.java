@@ -46,6 +46,11 @@ public class Gamme {
         this.operations = operations;
         this.equipements = equipements;
     }
+    public Gamme(String refGamme){
+        this.refGamme = refGamme;
+        this.operations = new ArrayList<Operation>();
+        this.equipements = new ArrayList<Equipement>();
+    }
 
     // Méthodes
     public String afficherGamme(){
@@ -75,5 +80,13 @@ public class Gamme {
         }
         return coutTotal;
     }
+
+    public void ajoutOp(Operation op){
+        this.operations.add(op);
+    }
+    public void supprOp(Operation op){
+        this.operations.remove(op);
+    }
+    
 
 }
