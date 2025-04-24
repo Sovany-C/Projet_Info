@@ -61,6 +61,16 @@ public class Atelier {
         return "Nom : " + this.nom + " | Equipement: " + refEq;
     }
 
+    public ArrayList<Machine> getMachine(){
+        ArrayList<Machine> machines = new ArrayList<>();
+        for(Equipement e : this.getEquipements()){
+            if(e instanceof Machine){
+                Machine m = (Machine) e;
+                machines.add(m);
+            }
+        }
+        return machines;
+    }
     
 
     

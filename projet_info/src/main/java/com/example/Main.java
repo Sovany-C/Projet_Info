@@ -73,7 +73,7 @@ public class Main {
         String[] mots;
 
         try{
-            BufferedReader flux=new BufferedReader(new FileReader("Poste.txt"));
+            BufferedReader flux=new BufferedReader(new FileReader("C:\\Users\\Java\\..\\examples\\Poste.txt"));
             String lignelue;
             while((lignelue=flux.readLine())!=null){
     
