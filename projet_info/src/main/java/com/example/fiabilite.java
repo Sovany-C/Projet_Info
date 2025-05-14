@@ -16,7 +16,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public void fiabilite(ArrayList<Machine>machines);
+public class fiabilite{
+
+    public void tri(Machine machines){
+        
+    }
+
 
  
 
