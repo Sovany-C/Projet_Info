@@ -69,6 +69,15 @@ public class Machine extends Equipement{
         return evenements;
     }
     private ArrayList<String> evenements = new ArrayList<>();
+    private double rendement;
+
+public double getRendement() {
+    return rendement;
+}
+
+public void setRendement(double rendement) {
+    this.rendement = rendement;
+}
 
     
     public Machine(String refEquipement, String dEquipement, String refMachine, String dMachine, String type, float x,
