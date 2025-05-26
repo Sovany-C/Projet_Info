@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.ArrayList;
+
 public class Machine extends Equipement{
     private String refMachine;
     private String dMachine;
@@ -45,6 +47,28 @@ public class Machine extends Equipement{
     public void setCout(float cout) {
         this.cout = cout;
     }
+     public int getNbPannes() {
+        return nbPannes;
+    }
+    public int nbPannes = 0;
+
+    public void setNbPannes(int nbPannes) {
+        this.nbPannes = nbPannes;
+    }
+    public Machine(String ref) {
+        super(ref, ""); // Call the superclass constructor with appropriate arguments
+        this.refMachine = ref;
+        // Initialize other fields if necessary
+    }
+
+     public void ajouterEvenement(String evt) {
+        evenements.add(evt);
+    }
+
+    public ArrayList<String> getEvenements() {
+        return evenements;
+    }
+    private ArrayList<String> evenements = new ArrayList<>();
 
     
     public Machine(String refEquipement, String dEquipement, String refMachine, String dMachine, String type, float x,
